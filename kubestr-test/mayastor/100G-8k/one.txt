@@ -1,0 +1,8 @@
+PVC created kubestr-fio-pvc-xtjdw
+Pod created kubestr-fio-pod-rp85r
+Running FIO test (test.fio) on StorageClass (openebs-three-replica) with a PVC of Size (100Gi)
+Elapsed time- 4m37.198149591s
+FIO test results:
+  Failed while running FIO test.: Error running command:([fio --directory /dataset /etc/fio-config/test.fio --output-format=json]), stderr:(): Failed to exec command in pod: context deadline exceeded.
+stdout: 
+stderr:   -  Error
