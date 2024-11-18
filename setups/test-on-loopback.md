@@ -15,6 +15,6 @@ $ sudo vgcreate lvmvg /dev/loop0 # here lvmvg is the volume group name to be cre
 
 ```bash
 $ truncate -s 200G /tmp/disk.img
-$ zpool create zfspv-pool `losetup -f /tmp/disk.img --show`
+$ zpool create zfspv-pool `losetup -f /tmp/disk.img --show` # or, sudo zpool create zfspv-pool $(sudo losetup -f /tmp/disk.img --show)
 $ zpool status
 ```

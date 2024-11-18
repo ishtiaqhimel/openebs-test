@@ -1,0 +1,39 @@
+PVC created kubestr-fio-pvc-v7kqn
+Pod created kubestr-fio-pod-2v6qp
+Running FIO test (test.fio) on StorageClass (openebs-zfspv) with a PVC of Size (100Gi)
+Elapsed time- 2m27.722136937s
+FIO test results:
+  
+FIO version - fio-3.36
+Global options - ioengine=libaio verify=0 direct=1 gtod_reduce=1
+
+JobName: read_iops
+  blocksize=8K filesize=2G iodepth=64 rw=randread
+read:
+  IOPS=50704.835938 BW(KiB/s)=405638
+  iops: min=24076 max=63547 avg=49297.898438
+  bw(KiB/s): min=192608 max=508376 avg=394384.812500
+
+JobName: write_iops
+  blocksize=8K filesize=2G iodepth=64 rw=randwrite
+write:
+  IOPS=2606.971191 BW(KiB/s)=20855
+  iops: min=478 max=25557 avg=2894.116699
+  bw(KiB/s): min=3824 max=204456 avg=23153.283203
+
+JobName: read_bw
+  blocksize=128K filesize=2G iodepth=64 rw=randread
+read:
+  IOPS=22021.505859 BW(KiB/s)=2818752
+  iops: min=19570 max=19570 avg=19570.000000
+  bw(KiB/s): min=2504960 max=2504960 avg=2504960.000000
+
+JobName: write_bw
+  blocksize=128K filesize=2G iodepth=64 rw=randwrite
+write:
+  IOPS=1500.228882 BW(KiB/s)=192029
+  iops: min=480 max=14438 avg=1535.523804
+  bw(KiB/s): min=61440 max=1848064 avg=196547.046875
+
+Disk stats (read/write):
+  -  OK
