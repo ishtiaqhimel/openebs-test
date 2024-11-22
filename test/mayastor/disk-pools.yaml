@@ -1,0 +1,30 @@
+apiVersion: "openebs.io/v1beta2"
+kind: DiskPool
+metadata:
+  name: pool-on-node-1
+  namespace: openebs
+spec:
+  node: ishtiaq-1
+  disks: ["/dev/vdc"]
+
+---
+
+apiVersion: "openebs.io/v1beta2"
+kind: DiskPool
+metadata:
+  name: pool-on-node-2
+  namespace: openebs
+spec:
+  node: ishtiaq-2
+  disks: ["/dev/vdc"]
+
+---
+
+apiVersion: "openebs.io/v1beta2"
+kind: DiskPool
+metadata:
+  name: pool-on-node-3
+  namespace: openebs
+spec:
+  node: ishtiaq-3
+  disks: ["/dev/vdc"]
