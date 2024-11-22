@@ -50,3 +50,4 @@ $ helm uninstall openebs -n openebs
 
 - [LVM vs ZFS: A Deep Dive Comparison for System Administrators](https://go.lightnode.com/tech/lvm-vs-zfs)
 - [Hugepages](https://wiki.debian.org/Hugepages)
+- [Kubernetes Storage Options Can Be Overwhelming — Pick the Right One](https://www.cncf.io/blog/2021/04/05/kubernetes-storage-options-can-be-overwhelming-pick-the-right-one/)
