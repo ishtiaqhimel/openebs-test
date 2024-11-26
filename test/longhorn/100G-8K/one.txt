@@ -1,0 +1,8 @@
+PVC created kubestr-fio-pvc-8qpqw
+Pod created kubestr-fio-pod-g8rz5
+Running FIO test (test.fio) on StorageClass (my-longhorn) with a PVC of Size (100Gi)
+Elapsed time- 4m37.201139147s
+FIO test results:
+  Failed while running FIO test.: Error running command:([fio --directory /dataset /etc/fio-config/test.fio --output-format=json]), stderr:(): Failed to exec command in pod: context deadline exceeded.
+stdout: 
+stderr:   -  Error

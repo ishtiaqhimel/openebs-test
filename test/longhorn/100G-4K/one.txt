@@ -1,0 +1,40 @@
+PVC created kubestr-fio-pvc-l8wjn
+Pod created kubestr-fio-pod-k88d6
+Running FIO test (default-fio) on StorageClass (my-longhorn) with a PVC of Size (100Gi)
+Elapsed time- 1m17.876090917s
+FIO test results:
+  
+FIO version - fio-3.36
+Global options - ioengine=libaio verify=0 direct=1 gtod_reduce=1
+
+JobName: read_iops
+  blocksize=4K filesize=2G iodepth=64 rw=randread
+read:
+  IOPS=363.957611 BW(KiB/s)=1472
+  iops: min=210 max=658 avg=367.533325
+  bw(KiB/s): min=840 max=2632 avg=1470.133301
+
+JobName: write_iops
+  blocksize=4K filesize=2G iodepth=64 rw=randwrite
+write:
+  IOPS=181.361023 BW(KiB/s)=741
+  iops: min=112 max=326 avg=181.000000
+  bw(KiB/s): min=448 max=1304 avg=724.233337
+
+JobName: read_bw
+  blocksize=128K filesize=2G iodepth=64 rw=randread
+read:
+  IOPS=356.483612 BW(KiB/s)=46157
+  iops: min=300 max=434 avg=359.933319
+  bw(KiB/s): min=38400 max=55552 avg=46071.464844
+
+JobName: write_bw
+  blocksize=128k filesize=2G iodepth=64 rw=randwrite
+write:
+  IOPS=176.366837 BW(KiB/s)=23101
+  iops: min=92 max=226 avg=180.000000
+  bw(KiB/s): min=11776 max=28928 avg=23040.000000
+
+Disk stats (read/write):
+  sda: ios=12337/6174 merge=52/213 ticks=1952166/1854523 in_queue=3806689, util=99.476105%
+  -  OK
